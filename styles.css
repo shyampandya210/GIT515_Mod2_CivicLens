@@ -89,6 +89,26 @@ body.dark-mode {
 
 /* ///ADD/// Skip Link Styles */
 
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  color: var(--watchdog-white);
+  background: var(--blue-bulletin);
+  padding: 8px;
+  z-index: 100;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+  transition: var(--transition);
+
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+
 /* ///ADD/// Navigation Styles */
 
 /* ///ADD/// Global Layout Styles */
