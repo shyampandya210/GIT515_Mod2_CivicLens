@@ -111,6 +111,14 @@ body.dark-mode {
 
 /* ///ADD/// Navigation Styles */
 
+.menu-button {
+  display: block;
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  padding: 1rem 2rem
+} 
+
+
 /* ///ADD/// Global Layout Styles */
 
 /* ///ADD/// Global Text Styles */
