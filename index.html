@@ -107,20 +107,35 @@
         <form action="https://wp.zybooks.com/form-viewer.php" method="post">
 
           <label for="name">Name</label>
-          <input type="text" id="name" name="name">
+          <input type="text" id="name" name="name" autocomplete="name">
           
           <label for="mobile">Mobile</label>
-          <input type="tel" id="mobile" name="mobile">
+          <input type="tel" id="mobile" name="mobile" autocomplete="tel" required>
           
           <fieldset>
             <legend>Notification Preferences</legend>
-            <label><input type="checkbox" name="preferences" value="breaking-news"> Breaking News</label>
-            <label><input type="checkbox" name="preferences" value="politics"> Politics</label>
-            <label><input type="checkbox" name="preferences" value="weather"> Weather</label>
-            <label><input type="checkbox" name="preferences" value="sports"> Sports</label>
-            <label><input type="checkbox" name="preferences" value="entertainment"> Entertainment</label>
-            <label><input type="checkbox" name="preferences" value="world"> World</label>
-            <label><input type="checkbox" name="preferences" value="financial"> Financial</label>
+            
+            <input type="checkbox" name="preferences" id="breaking-news" value="breaking-news">
+            <label for="breaking-news">Breaking News</label>
+
+            <input type="checkbox" name="preferences" id="politics" value="politics">
+            <label for="politics">Politics</label>
+
+            <input type="checkbox" name="preferences" id="weather" value="weather">
+            <label for="weather">Weather</label>
+            
+            <input type="checkbox" name="preferences" id="sports" value="sports">
+            <label for="sports">Sports</label>
+
+            <input type="checkbox" name="preferences" id="entertainment" value="entertainment">
+            <label for="entertainment">Entertainment</label>
+
+            <input type="checkbox" name="preferences" id="world" value="world">
+            <label for="world">World</label>
+
+            <input type="checkbox" name="preferences" id="financial" value="financial">
+            <label for="financial">Financial</label>
+
           </fieldset>
           
           <button type="submit">Subscribe</button>
