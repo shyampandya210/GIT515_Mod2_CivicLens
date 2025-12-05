@@ -188,7 +188,20 @@ body.dark-mode {
 
 /* ///ADD/// Global Layout Styles */
 
-main {
+header,
+footer {
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+  padding: 1rem 0rem;
+}
+
+.header-content,
+.footer-content {
+  width: 90%;
+  max-width: 1800px;
+}
+
+main{
   width: 90%;
   max-width: 1800px;
   margin: 0 auto;
@@ -196,9 +209,7 @@ main {
 
 article,
 section,
-form,
-header,
-footer {
+form {
   margin-bottom: 2rem;
 }
 
@@ -246,12 +257,6 @@ form {
   border: 0.15rem solid var(--story-subtitle);
   box-shadow: var(--shadow);
   padding: 1rem;
-}
-
-footer{
-  background-color: var(--blue-bulletin);
-  color: var(--watchdog-white);
-
 }
 
 
