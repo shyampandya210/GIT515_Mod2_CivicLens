@@ -124,13 +124,11 @@ body.dark-mode {
 } 
 
 .mobile-nav {
-  display: none;
   margin: 1rem 0rem;
 }
 
 #menu-toggle {
   display: none;
-
 }
 
 .menu {
@@ -357,9 +355,48 @@ blockquote {
 }
 
 
+nav.mobile-nav .menu{
+  display: none;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+
 /* ///ADD/// medium styles 620px */
 
 @media (min-width: 620px) {
+
+
+
+  nav.mobile-nav {
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+
+  nav.mobile-nav .menu {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    opacity: 1;
+    max-height: none;
+  }
+
+  nav.mobile-nav .menu li a {
+    padding: 0.5rem 1rem;
+  }
+
+  nav.mobile-nav .menu-button {
+    display: none;
+  }
+
+
+
 
   .breaking-news-grid {
     grid-template-columns: repeat(1, 1fr);
@@ -432,5 +469,18 @@ blockquote {
 
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
 @supports (selector(:has(*))) {
+
+  @media (max-width: 619px){
+    .mobile-nav .menu {
+      max-height: 0;
+      opacity: 0;
+      transition: var(--transition);
+    }
+
+    .mobile-nav:has(#menu-toggle:checked) .menu {
+      max-height: 300px;
+      opacity: 1;
+    }
+  }
 
 }
