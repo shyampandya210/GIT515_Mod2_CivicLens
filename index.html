@@ -152,11 +152,15 @@
         
         <form action="https://wp.zybooks.com/form-viewer.php" method="post">
 
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" autocomplete="name">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name">
+          </div>
           
-          <label for="mobile">Mobile</label>
-          <input type="tel" id="mobile" name="mobile" autocomplete="tel" required>
+          <div class="form-group">
+            <label for="mobile">Mobile</label>
+            <input type="tel" id="mobile" name="mobile" autocomplete="tel" required>
+          </div>
           
           <fieldset>
             <legend>Notification Preferences</legend>
