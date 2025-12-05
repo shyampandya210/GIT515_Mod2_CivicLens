@@ -204,7 +204,6 @@ body {
 
 h1, h2, h3 {
   font-family: var(--font-heading);
-  color: var(--truth-text);
   font-weight: normal;
   margin: 1rem;
   padding: 1rem;
