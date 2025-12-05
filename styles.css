@@ -404,9 +404,17 @@ blockquote {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
-
+}
 
 /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
+
+@media (prefers-reduced-motion: reduce){
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
 
 
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
