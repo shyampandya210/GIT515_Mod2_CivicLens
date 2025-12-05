@@ -244,12 +244,20 @@ video {
   margin-bottom: 1.5rem;
   border: 0.15rem solid var(--blue-bulletin);
   color: var(--watchdog-white);
+  transition: var(--transition);
 }
 
 .breaking-news h3 {
   margin-top: 0rem;
   border-bottom: 0.15rem solid var(--watchdog-white);
 }
+
+.breaking-news:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+
 
 .featured-articles-grid {
   display: grid;
@@ -263,6 +271,7 @@ video {
   padding: 1rem;
   border: 0.15rem solid var(--story-subtitle);
   box-shadow: var(--shadow);
+  transition: var(--transition);
 }
 
 .featured-article h3 {
