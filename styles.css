@@ -234,10 +234,19 @@ video {
 }
 
 
+form {
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  border-radius: 0.5rem;
+  border: 0.15rem solid var(--story-subtitle);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+
 footer{
   background-color: var(--blue-bulletin);
   color: var(--watchdog-white);
-  
+
 }
 
 
