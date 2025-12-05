@@ -247,6 +247,7 @@ video {
 }
 
 .breaking-news h3 {
+  margin-top: 0rem;
   border-bottom: 0.15rem solid var(--watchdog-white);
 }
 
@@ -265,6 +266,7 @@ video {
 }
 
 .featured-article h3 {
+  margin-top: 0rem;
   border-bottom: 0.15rem solid var(--story-subtitle);
 }
 
@@ -337,6 +339,13 @@ blockquote {
   letter-spacing: -0.5px;
   color: var(--watchdog-white);
 } 
+
+.tagline {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: -0.5px;
+}
 
 
 /* ///ADD/// medium styles 620px */
