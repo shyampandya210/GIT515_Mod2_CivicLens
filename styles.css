@@ -466,6 +466,9 @@ blockquote {
 }
 
 
+footer p {
+  text-align: center;}
+
 nav.mobile-nav .menu{
   display: none;
   max-height: 0;
