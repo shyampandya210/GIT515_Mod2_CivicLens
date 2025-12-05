@@ -188,6 +188,11 @@ body.dark-mode {
 
 /* ///ADD/// Global Layout Styles */
 
+main {
+  margin: 0 auto;
+  padding: 1rem 5rem;
+}
+
 
 
 /* ///ADD/// Global Text Styles */
@@ -205,8 +210,7 @@ body {
 h1, h2, h3 {
   font-family: var(--font-heading);
   font-weight: normal;
-  margin: 1rem;
-  padding: 1rem;
+  margin: 1rem 0rem;
 }
 
 h1 {
@@ -219,6 +223,18 @@ h2 {
 }
 h3 {
   font-size: 1.5rem;
+}
+
+p {
+  margin: 0.5rem 0rem;
+}
+
+blockquote {
+  font-family: var(--font-heading);
+  font-weight: bold;
+  margin: 1rem 2rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
 }
 
 
