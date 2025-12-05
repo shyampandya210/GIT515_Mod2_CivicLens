@@ -207,18 +207,24 @@ video {
   height: auto;
 }
 
+.breaking-news-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+
 .breaking-news {
   display: inline-block;
   background-color: var(--news-flash);
   padding: 1rem;
-  border-radius: 0.5rem;
   box-shadow: var(--shadow);
   margin-bottom: 1.5rem;
 
   color: var(--watchdog-white);
 }
 
-/* Still needs grid setup */
+
 .featured-articles-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -297,6 +303,12 @@ blockquote {
 /* ///ADD/// medium styles 620px */
 
 @media (min-width: 620px) {
+
+  .breaking-news-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
   .featured-articles-grid {
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
@@ -308,6 +320,12 @@ blockquote {
 /* ///ADD/// large styles 920px */
 
 @media (min-width: 920px) {
+
+  .breaking-news-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
   .featured-articles-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
@@ -319,6 +337,12 @@ blockquote {
 /* ///ADD/// x-large styles 1024px */
 
 @media (min-width: 1024px) {
+
+  .breaking-news-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
   .featured-articles-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
