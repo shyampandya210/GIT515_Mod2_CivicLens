@@ -289,7 +289,7 @@ form {
 
   background-color: var(--news-flash);
   color: var(--watchdog-white);
-  border: 0.15rem solid var(--story-subtitle);
+  border: 0.15rem solid var(--blue-bulletin);
   box-shadow: var(--shadow);
   padding: 1rem;
 }
@@ -333,6 +333,52 @@ form fieldset label {
   font-size: 1.25rem;
   font-weight: normal;
 }
+
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  background-color: var(--watchdog-white);
+  border: 0.15rem solid var(--blue-bulletin);
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"]:checked {
+  background-color: var(--blue-bulletin);
+  border: 0.15rem solid var(--blue-bulletin);
+
+  /*
+  content: '✓';
+  color: var(--watchdog-white);
+  */
+
+}
+
+.checkbox-group input[type="checkbox"]:checked::after {
+  content: '✓';
+  color: var(--watchdog-white);
+
+  font-family: var(--font-body);
+  font-weight: bold;
+  font-size: 1.5rem;
+
+  position: absolute;
+
+  transform: translateY(-0.45rem);
+}
+
+
+
 
 form button {
   grid-column: 1/-1;
