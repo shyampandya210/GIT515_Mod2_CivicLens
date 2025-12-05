@@ -229,9 +229,6 @@ video {
 }
 
 
-
-
-
 .breaking-news-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -245,15 +242,18 @@ video {
   padding: 1rem;
   box-shadow: var(--shadow);
   margin-bottom: 1.5rem;
-
+  border: 0.15rem solid var(--blue-bulletin);
   color: var(--watchdog-white);
 }
 
+.breaking-news h3 {
+  border-bottom: 0.15rem solid var(--watchdog-white);
+}
 
 .featured-articles-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
+  gap: 0.5rem;
 }
 
 .featured-article {
@@ -264,6 +264,9 @@ video {
   box-shadow: var(--shadow);
 }
 
+.featured-article h3 {
+  border-bottom: 0.15rem solid var(--story-subtitle);
+}
 
 form {
   background-color: var(--news-flash);
