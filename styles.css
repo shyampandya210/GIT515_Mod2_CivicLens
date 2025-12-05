@@ -234,7 +234,11 @@ video {
 }
 
 
-
+footer{
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+  
+}
 
 
 
