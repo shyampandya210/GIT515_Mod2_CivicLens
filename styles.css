@@ -189,9 +189,53 @@ body.dark-mode {
 /* ///ADD/// Global Layout Styles */
 
 main {
+  width: 90%;
+  max-width: 1800px;
   margin: 0 auto;
-  padding: 1rem 5rem;
 }
+
+article,
+section,
+form,
+header,
+footer {
+  margin-bottom: 2rem;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.breaking-news {
+  display: inline-block;
+  background-color: var(--news-flash);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
+
+  color: var(--watchdog-white);
+}
+
+/* Still needs grid setup */
+.featured-articles-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.featured-article {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 0.15rem solid var(--story-subtitle);
+  box-shadow: var(--shadow);
+}
+
+
+
+
 
 
 
