@@ -195,13 +195,10 @@ footer {
   padding: 1rem 0rem;
 }
 
+
+main, 
 .header-content,
 .footer-content {
-  width: 90%;
-  max-width: 1800px;
-}
-
-main{
   width: 90%;
   max-width: 1800px;
   margin: 0 auto;
