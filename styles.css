@@ -175,7 +175,7 @@ body.dark-mode {
     background-color: var(--blue-bulletin);
   }
   
-  body.dark-mode .menu li a {
+  /* body.dark-mode .menu li a {
     background-color: var(--news-flash);
     color: var(--watchdog-white);
   }
@@ -183,10 +183,12 @@ body.dark-mode {
   body.dark-mode .menu li a:hover {
     background-color: var(--blue-bulletin);
   }
-
+    */
 }
 
 /* ///ADD/// Global Layout Styles */
+
+
 
 /* ///ADD/// Global Text Styles */
 
