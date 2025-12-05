@@ -192,6 +192,36 @@ body.dark-mode {
 
 /* ///ADD/// Global Text Styles */
 
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--truth-text);
+  margin: 0;
+  padding: 0;
+}
+
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  color: var(--truth-text);
+  font-weight: normal;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  
+}
+h3 {
+  font-size: 1.5rem;
+}
+
 
 /* ///ADD/// medium styles 620px */
 
